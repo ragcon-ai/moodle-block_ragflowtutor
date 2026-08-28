@@ -1,0 +1,109 @@
+/* RAGflow Tutor knowledge-base panel (shown in the block to managers/trainers). */
+.block_ragflowtutor .rfdtutor-kbpanel {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid var(--border-color, #dee2e6);
+    border-radius: 0.35rem;
+    font-size: 0.85rem;
+}
+
+.block_ragflowtutor .rfdtutor-kbpanel-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.block_ragflowtutor .rfdtutor-refresh,
+.block_ragflowtutor .rfdtutor-reparse,
+.block_ragflowtutor .rfdtutor-download {
+    padding: 0;
+    color: var(--secondary, #6c757d);
+}
+
+/* Status line: "Status" label + traffic-light dot + refresh button. */
+.block_ragflowtutor .rfdtutor-status {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 0.4rem;
+}
+
+.block_ragflowtutor .rfdtutor-status-label {
+    color: var(--secondary, #6c757d);
+}
+
+.block_ragflowtutor .rfdtutor-status .rfdtutor-refresh {
+    margin-left: auto;
+}
+
+.block_ragflowtutor .rfdtutor-line {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    line-height: 1.5;
+}
+
+.block_ragflowtutor .rfdtutor-line-label {
+    color: var(--secondary, #6c757d);
+}
+
+/* Traffic-light status dot. */
+.block_ragflowtutor .rfdtutor-dot {
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    background: var(--secondary, #6c757d);
+}
+
+.block_ragflowtutor .rfdtutor-dot--green {
+    background: var(--success, #28a745);
+}
+
+.block_ragflowtutor .rfdtutor-dot--yellow {
+    background: var(--warning, #ffc107);
+}
+
+.block_ragflowtutor .rfdtutor-dot--red {
+    background: var(--danger, #dc3545);
+}
+
+.block_ragflowtutor .rfdtutor-files {
+    margin-top: 0.4rem;
+}
+
+.block_ragflowtutor .rfdtutor-filelist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* Show ~7 rows, then scroll instead of growing the block. */
+    max-height: 14rem;
+    overflow-y: auto;
+}
+
+.block_ragflowtutor .rfdtutor-fileitem {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.15rem 0.3rem;
+}
+
+/* Alternating row background: white, grey, white, grey … */
+.block_ragflowtutor .rfdtutor-fileitem:nth-child(even) {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.block_ragflowtutor .rfdtutor-filename {
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.block_ragflowtutor .rfdtutor-del {
+    padding: 0;
+    color: var(--danger, #dc3545);
+}
