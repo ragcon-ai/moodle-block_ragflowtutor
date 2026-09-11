@@ -25,10 +25,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'block_ragflowtutor';
-$plugin->version   = 2026082810;
+$plugin->version   = 2026090200;
 $plugin->requires  = 2025041400; // Moodle 5.0 (minimum; supports 5.0-5.2).
 $plugin->dependencies = [
     'aiprovider_ragflow' => ANY_VERSION, // Shared chat engine (external service, AMD, templates).
 ];
 $plugin->maturity  = MATURITY_BETA;
-$plugin->release   = '0.7.0';
+$plugin->release   = '0.7.1';

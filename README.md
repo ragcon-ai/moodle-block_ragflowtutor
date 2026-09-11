@@ -73,6 +73,10 @@ Professional support and web hosting for RAGflow + Moodle are available from **R
 
 ## Changelog ##
 
+### 0.7.1 ###
+
+* **German translation completed.** Added the missing German strings for the locked knowledge base / assistant view, so a German admin sees fully translated text in the block configuration.
+
 ### 0.7.0 ###
 
 * **First public release (beta).** A per-course AI tutor as a Moodle block: a course-scoped chat drawer

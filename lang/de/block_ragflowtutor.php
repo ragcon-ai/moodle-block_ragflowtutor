@@ -24,10 +24,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['assistantunavailable'] = 'Ausgewählter Assistent (derzeit nicht verfügbar — siehe Status-Panel dieses Blocks)';
 $string['config_chatid'] = 'Wissensbasis / Assistent';
 $string['config_chatid_help'] = 'Der RAGflow-Chat-Assistent, den dieser Tutor nutzt; seine Wissensbasis begründet die Antworten. Wähle einen mit Wissensbasis für RAG-gestützte Antworten oder einen ohne für einen reinen LLM-Tutor.';
 $string['config_greeting'] = 'Begrüßungstext';
 $string['config_greeting_help'] = 'Wird als erste Nachricht angezeigt, wenn der Tutor-Chat geöffnet wird (leer lassen für den Standard).';
+$string['config_locked'] = 'Die Wissensbasis / der Assistent und die Dokumentquelle werden bei der Anlage des Blocks festgelegt und können danach nicht mehr geändert werden. Um andere Einstellungen zu nutzen, entferne diesen Block und füge einen neuen hinzu.';
 $string['config_managefiles'] = 'Dateien aus diesem Block verwalten';
 $string['config_managefiles_help'] = 'Nur beim Anlegen einer neuen Wissensbasis. Aktiviert lassen, um die Dokumente über ein Panel in diesem Block hochzuladen und zu verwalten (der Block besitzt die Wissensbasis). Deaktivieren, um Moodle nur mit der neuen Wissensbasis zu verbinden — die Dokumente werden dann in RAGflow selbst hinzugefügt und verwaltet. Nach dem Anlegen des Blocks fixiert.';
 $string['config_systeminstruction'] = 'Systemanweisung';
